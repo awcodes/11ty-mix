@@ -1,0 +1,24 @@
+{
+  "name": "eleventy-mix",
+  "version": "0.0.1",
+  "description": "An 11ty starter with Laravel Mix for asset compliation.",
+  "main": "index.js",
+  "scripts": {
+    "watch:11ty": "set DEBUG=Eleventy* && eleventy --serve",
+    "watch:assets": "mix watch",
+    "prod:11ty": "eleventy",
+    "prod:assets": "mix --production",
+    "watch": "npm run watch:assets & npm run watch:11ty",
+    "build": "npm run prod:assets && npm run prod:11ty"
+  },
+  "keywords": [],
+  "author": "Adam Weston <awcodes1@gmail.com> (https://github.com/awcodes)",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "alpinejs": "^3.7.1",
+    "laravel-mix": "^6.0.39",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^3.0.10"
+  }
+}
